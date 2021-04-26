@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #EFF2FB;
+
+}
+
+.container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.container form {
+    text-align: center;
+    margin-top: 13rem;
+}
+
+.container form h1 {
+    color: #7B7B7B;
+    font: 500 1.9rem Roboto, sans-serif;;
+}
+
+.container form img {
+    margin-top: 15px;
+    margin-bottom: 60px;
+    width: 70px;
+    height: 70px;
+}
+
+.options {
+    font-size: 18px;
+
+    width:480px;  /* Tamanho final do select */   
+    overflow:hidden; /* Esconde o conteúdo que passar do tamanho especificado */
+}
+
+
+.options select {
+    border-radius: 5px;
+    background: url(http://www.webcis.com.br/images/imagens-noticias/select/ico-seta-select.gif) no-repeat #354880;
+    background-position: 428px center;/*Posição da imagem do background*/
+    width: 480px; /* Tamanho do select, maior que o tamanho da div "div-select" */
+    height: 55px; /* altura do select, importante para que tenha a mesma altura em todo os navegadores */
+    font-family:Arial, Helvetica, sans-serif; /* Fonte do Select */
+    font-size:18px; /* Tamanho da Fonte */
+    padding: 15px 20px 13px 25px; /* Configurações de padding para posicionar o texto no campo */
+    color:#fff; /* Cor da Fonte */
+
+    -webkit-appearance: none;  /* Remove estilo padrão do Chrome */
+    -moz-appearance: none; /* Remove estilo padrão do FireFox */
+    appearance: none; /* Remove estilo padrão do FireFox*/
+}
+
+.input-valor {
+    width: 480px;
+    padding: 10px;
+    font-size: 28px;
+    border-radius: 5px;
+    border: 1px solid #A4A4A4;
+}
+
+.valores-entrada {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.input-button {
+    margin-top: 30px;
+    border-radius: 5px;
+    border: 0;
+    background: #7BBA96;
+    font-size: 22px;
+    color: #EFF2FB;
+    padding: 15px;
+}
+
+.mensagem {
+    margin-top: 30px;
+    font-size: 24px;
+}

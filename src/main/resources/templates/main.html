@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Conversor de Moedas</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+
+    <div class="container">
+
+        <form method="post" action="/converter" th:object="${form}">
+            <h1>CONVERSOR DE MOEDAS</h1>
+            <img src="../icons/money.svg" alt="">
+
+            <div class="options">
+                <select th:field="*{tipoConversao}">
+                    <option value="USD-BRL">DÓLAR PARA REAL</option>
+                    <option value="BRL-USD">REAL PARA DÓLAR</option>
+                </select>
+            </div>
+
+            <div class="valores-entrada">
+                <input class="input-valor" type="text" th:field="*{valorAConverter}"/>
+                <input class="input-button" type="submit" value="CONVERTER" />
+            </div>
+
+            <div class="mensagem">
+                <p th:text="${mensagem}"></p>
+            </div>
+        </form>
+
+    </div>
+
+</body>
+</html>
